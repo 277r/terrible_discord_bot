@@ -42,12 +42,12 @@ client.on('message', msg => {
     
     var spamcount = messagevars[2];
     var user = messagevars[1];
-    if (spamcount < 2000 && (msg.mentions.members.first().id != '367957099801739264' || msg.mentions.members.first().id !='658750388341571604')){
+    if (spamcount < 2000 && (msg.mentions.members.first().id != 'ownerID2' || msg.mentions.members.first().id !='ownerID')){
     for (spamcount; spamcount > 0; spamcount--){
       msg.channel.send(`${user} ${spamcount} annoyances left: "${messagetext}"`);
     }
   }
-  else if (msg.author.id == '367957099801739264' || msg.author.id == '658750388341571604'){
+  else if (msg.author.id == 'ownerID2' || msg.author.id == 'ownerID'){
     for (spamcount; spamcount > 0; spamcount--){
       msg.channel.send(`${user} ${spamcount} annoyances left: "${messagetext}"`);
   }
